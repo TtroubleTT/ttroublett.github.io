@@ -108,6 +108,9 @@ nav ul li a {
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
     justify-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .project-card, .skill-card {
@@ -120,6 +123,16 @@ nav ul li a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+
+.project-card, .skill-card  {
+    display: inline-block;
+    margin: 0 10px;
+    max-width: 450px;
+    min-width: 350px;
+    text-align: center;
+    text-wrap: wrap;
 }
 
 .project-card h3, .skill-card h3 {
