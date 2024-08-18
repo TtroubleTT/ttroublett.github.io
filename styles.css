@@ -24,9 +24,11 @@ header h1 {
     margin: 0;
     font-size: 2.5em;
     letter-spacing: 2px;
-    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    background: linear-gradient(270deg, #4158D0, #C850C0, #FFCC70);
+    background-size: 600% 600%; /* Large background size for smooth animation */
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: gradient-flow 8s ease infinite; /* Animation for the gradient */
 }
 
 nav ul {
@@ -49,11 +51,11 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #e0eafc;
+    color: #FFCC70;
 }
 
 #hero {
-    background: url('https://media.discordapp.net/attachments/1064690134991261768/1274517015620616295/IMG_7596.PNG?ex=66c332b7&is=66c1e137&hm=c1dec29a71a51abfa2bba441216763b36924866dcfc0df6c36886916df039623&=&format=webp&quality=lossless&width=1056&height=594') no-repeat center center;
+    background: url('https://media.discordapp.net/attachments/1064690134991261768/1274517015620616295/IMG_7596.PNG?ex=66c332b7&is=66c1e137&hm=c1dec29a71a51abfa2bba441216763b36924866dcfc0df6c36886916df039623&format=webp&quality=lossless&width=1056&height=594') no-repeat center center;
     background-size: cover;
     height: 350px;
     filter: brightness(70%);
@@ -66,9 +68,11 @@ nav ul li a:hover {
 #welcome-header h2 {
     font-size: 2.5em;
     margin: 0;
-    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    background: linear-gradient(270deg, #4158D0, #C850C0, #FFCC70);
+    background-size: 600% 600%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: gradient-flow 8s ease infinite;
     letter-spacing: 1.5px;
     text-transform: uppercase;
 }
@@ -97,11 +101,13 @@ nav ul li a:hover {
 
 .about-me h2, .connections h2 {
     margin-top: 0;
-    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    background: linear-gradient(270deg, #4158D0, #C850C0, #FFCC70);
+    background-size: 600% 600%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: gradient-flow 8s ease infinite;
     font-size: 1.8em;
-    border-bottom: 2px solid #e0eafc;
+    border-bottom: 2px solid #4158D0;
     padding-bottom: 10px;
 }
 
@@ -124,7 +130,7 @@ nav ul li a:hover {
 
 .connection-item p {
     font-size: 1.2em;
-    color: #e0eafc;
+    color: #4158D0; /* Match the start of the gradient */
 }
 
 #projects, #skills {
@@ -134,9 +140,11 @@ nav ul li a:hover {
 
 #projects h2, #skills h2 {
     margin-bottom: 30px;
-    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    background: linear-gradient(270deg, #4158D0, #C850C0, #FFCC70);
+    background-size: 600% 600%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: gradient-flow 8s ease infinite;
     font-size: 2em;
     text-transform: uppercase;
     letter-spacing: 1.5px;
@@ -167,9 +175,11 @@ nav ul li a:hover {
 .project-card h3, .skill-card h3 {
     margin-top: 0;
     font-size: 1.5em;
-    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    background: linear-gradient(270deg, #4158D0, #C850C0, #FFCC70);
+    background-size: 600% 600%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: gradient-flow 8s ease infinite;
 }
 
 .project-card p, .skill-card p {
@@ -207,11 +217,24 @@ footer {
 }
 
 a {
-    color: #e0eafc;
+    color: #FFCC70; /* Match the end of the gradient */
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover {
     color: #fff;
+}
+
+/* Gradient Animation */
+@keyframes gradient-flow {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
 }
