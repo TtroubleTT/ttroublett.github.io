@@ -42,7 +42,7 @@ nav ul li a {
 }
 
 #hero {
-    background: url('https://media.discordapp.net/attachments/1064690134991261768/1274517015620616295/IMG_7596.PNG?ex=66c332b7&is=66c1e137&hm=c1dec29a71a51abfa2bba441216763b36924866dcfc0df6c36886916df039623&=&format=webp&quality=lossless&width=1056&height=594') no-repeat center center;
+    background: url('IMG_7596.PNG') no-repeat center center;
     background-size: cover;
     height: 300px;
 }
@@ -64,7 +64,7 @@ nav ul li a {
 .info-container {
     display: flex;
     justify-content: center;
-    align-items: stretch; /* Ensures equal height */
+    align-items: flex-start;
     flex-wrap: wrap;
 }
 
@@ -76,9 +76,10 @@ nav ul li a {
     min-width: 280px;
     margin: 10px;
     text-align: center;
+    height: auto; /* Allows for equal heights */
     display: flex;
     flex-direction: column;
-    justify-content: space-between; /* Ensures content is spaced evenly */
+    justify-content: space-between;
 }
 
 .about-me h2, .connections h2 {
@@ -107,16 +108,36 @@ nav ul li a {
 }
 
 .project-grid, .skills-grid {
-    display: flex;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 20px;
     justify-items: center;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    align-items: start;
 }
 
-.project-card, .skill-card {
+.project-card {
+    background: #222;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.video-container {
+    width: 100%;
+    height: 230px;
+    padding: 10px 0;
+}
+
+.skill-card {
     background: #222;
     padding: 20px;
     border-radius: 8px;
@@ -126,36 +147,12 @@ nav ul li a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-}
-
-.project-card, .skill-card  {
-    display: inline-block;
-    margin: 0 10px;
-    max-width: 450px;
-    min-width: 350px;
-    text-align: center;
-    text-wrap: wrap;
-}
-
-.project-card h3, .skill-card h3 {
-    margin-top: 0;
-}
-
-.video-container {
-    width: 100%;
-    padding: 10px 0;
-}
-
-.video-container iframe {
-    width: 100%;
-    height: 200px;
-    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .skill-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transform: translateY(-10px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.7);
 }
 
 footer {
