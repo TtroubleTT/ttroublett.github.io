@@ -53,27 +53,19 @@ nav ul li a:hover {
 
 #hero {
     height: 100vh;
-    background: url('https://cdn.discordapp.com/attachments/1064690134991261768/1274517015620616295/IMG_7596.PNG?ex=66c289f7&is=66c13877&hm=e67cd860fc25486f4d273ddcc7528b0518acf91ac20774c68d7200474fe6922d&') no-repeat center center/cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+}
+
+#welcome-header {
+    background: #2c2c2c;
+    padding: 50px 20px;
     text-align: center;
 }
 
-.hero-content h2 {
-    font-size: 3em;
+#welcome-header h2 {
+    font-size: 2.5em;
     margin-bottom: 20px;
-    animation: fadeIn 1s ease-out;
-}
-
-.hero-content p {
-    font-size: 1.5em;
-    animation: fadeIn 2s ease-out;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    color: #f4f4f4;
 }
 
 section {
@@ -88,14 +80,14 @@ section h2 {
     text-align: center;
 }
 
-.project-grid, .skills-grid {
+.project-grid, .skills-grid, .connections-grid {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 20px;
 }
 
-.project-card, .skill-card {
+.project-card, .skill-card, .connection-card {
     background: #2c2c2c;
     padding: 20px;
     border-radius: 10px;
@@ -105,15 +97,19 @@ section h2 {
     text-align: center;
 }
 
-.project-card:hover, .skill-card:hover {
+.project-card:hover, .skill-card:hover, .connection-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
 }
 
-.project-card h3, .skill-card h3 {
+.project-card h3, .skill-card h3, .connection-card h3 {
     margin-bottom: 10px;
     font-size: 1.8em;
     color: #f4f4f4;
+}
+
+.video-container {
+    margin-top: 20px;
 }
 
 footer {
