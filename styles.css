@@ -36,7 +36,7 @@ nav ul li a {
 }
 
 #hero {
-    background: url('your-hero-image.jpg') no-repeat center center;
+    background: url('https://media.discordapp.net/attachments/1064690134991261768/1274517015620616295/IMG_7596.PNG?ex=66c289f7&is=66c13877&hm=e67cd860fc25486f4d273ddcc7528b0518acf91ac20774c68d7200474fe6922d&=&format=webp&quality=lossless&width=1056&height=594') no-repeat center center;
     background-size: cover;
     height: 300px;
 }
