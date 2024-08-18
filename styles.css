@@ -1,176 +1,127 @@
-/* Reset and Fonts */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* General Styles */
 body {
     font-family: 'Raleway', sans-serif;
-    color: #ffffff;
-    background-color: #1a1a1a;
-    line-height: 1.6;
-    transition: background-color 0.3s ease;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    background-color: #111;
 }
 
 header {
-    background: #333;
+    background: #222;
     padding: 20px;
     text-align: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    color: #fff;
 }
 
 header h1 {
-    margin-bottom: 10px;
-    font-weight: 600;
-    font-size: 2.2em;
+    margin: 0;
+    font-size: 2em;
 }
 
 nav ul {
     list-style: none;
-    display: flex;
-    justify-content: center;
+    padding: 0;
 }
 
 nav ul li {
+    display: inline;
     margin: 0 15px;
 }
 
 nav ul li a {
     color: #fff;
     text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #f4f4f4;
+    font-weight: bold;
 }
 
 #hero {
-    height: 100vh;
-    background: url('https://via.placeholder.com/1920x1080') no-repeat center center/cover;
+    background: url('your-hero-image.jpg') no-repeat center center;
+    background-size: cover;
+    height: 300px;
 }
 
 #welcome-header {
-    background: #2c2c2c;
-    padding: 50px 20px;
     text-align: center;
+    padding: 40px 20px;
 }
 
 #welcome-header h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-    color: #f4f4f4;
+    font-size: 2em;
 }
 
 #info-box {
-    display: flex;
-    justify-content: center;
-    margin: 50px 0;
+    background: #333;
     padding: 20px;
 }
 
 .info-container {
-    background: #333;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
-    width: 80%;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .about-me, .connections {
+    background: #444;
+    padding: 20px;
+    border-radius: 8px;
     flex: 1;
-    margin: 0 20px;
+    margin: 10px;
 }
 
-.connections h2, .about-me h2 {
-    font-size: 2em;
-    margin-bottom: 15px;
-    border-bottom: 2px solid #555;
-    padding-bottom: 10px;
+.about-me h2, .connections h2 {
+    margin-top: 0;
 }
 
 .connection-item {
     display: flex;
     align-items: center;
-    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 .connection-item img {
-    width: 30px;
-    height: 30px;
+    width: 24px;
+    height: 24px;
     margin-right: 10px;
 }
 
-.connection-item p {
-    margin: 0;
+#projects, #skills {
+    padding: 40px 20px;
 }
 
-section {
-    padding: 100px 20px;
-}
-
-section h2 {
-    margin-bottom: 20px;
-    font-size: 2.5em;
-    border-bottom: 3px solid #555;
-    padding-bottom: 10px;
+#projects h2, #skills h2 {
     text-align: center;
+    margin-bottom: 20px;
 }
 
 .project-grid, .skills-grid {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
 }
 
 .project-card, .skill-card {
-    background: #2c2c2c;
+    background: #222;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 560px; /* Adjusted width to match video size */
-    text-align: center;
-}
-
-.project-card:hover, .skill-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 .project-card h3, .skill-card h3 {
-    margin-bottom: 10px;
-    font-size: 1.8em;
-    color: #f4f4f4;
-}
-
-.video-container {
-    margin-top: 20px;
-    overflow: hidden; /* Ensure content fits within the card */
-    border-radius: 10px;
+    margin-top: 0;
 }
 
 .video-container iframe {
     width: 100%;
-    height: 315px; /* Adjusted height to match video aspect ratio */
+    height: 200px;
     border: none;
-    border-radius: 10px;
 }
 
 footer {
-    background: #333;
-    padding: 20px;
+    background: #222;
+    padding: 10px;
     text-align: center;
-    margin-top: 50px;
-    font-size: 0.9em;
-    border-top: 2px solid #555;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
