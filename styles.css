@@ -5,12 +5,12 @@ body {
     padding: 0;
     color: #fff;
     background-color: #111;
+    text-align: center; /* Center align all text by default */
 }
 
 header {
     background: #222;
     padding: 20px;
-    text-align: center;
     color: #fff;
 }
 
@@ -22,6 +22,7 @@ header h1 {
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -42,12 +43,12 @@ nav ul li a {
 }
 
 #welcome-header {
-    text-align: center;
     padding: 40px 20px;
 }
 
 #welcome-header h2 {
     font-size: 2em;
+    margin: 0;
 }
 
 #info-box {
@@ -57,7 +58,9 @@ nav ul li a {
 
 .info-container {
     display: flex;
-    justify-content: space-around;
+    justify-content: center; /* Center align the info-container */
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
 .about-me, .connections {
@@ -65,7 +68,9 @@ nav ul li a {
     padding: 20px;
     border-radius: 8px;
     flex: 1;
+    min-width: 280px;
     margin: 10px;
+    text-align: center; /* Center align text in boxes */
 }
 
 .about-me h2, .connections h2 {
@@ -75,6 +80,7 @@ nav ul li a {
 .connection-item {
     display: flex;
     align-items: center;
+    justify-content: center; /* Center align connection items */
     margin-bottom: 10px;
 }
 
@@ -89,7 +95,6 @@ nav ul li a {
 }
 
 #projects h2, #skills h2 {
-    text-align: center;
     margin-bottom: 20px;
 }
 
@@ -97,6 +102,7 @@ nav ul li a {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
+    justify-items: center; /* Center grid items */
 }
 
 .project-card, .skill-card {
@@ -104,10 +110,20 @@ nav ul li a {
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .project-card h3, .skill-card h3 {
     margin-top: 0;
+}
+
+.video-container {
+    width: 100%;
+    padding: 10px 0;
 }
 
 .video-container iframe {
@@ -119,7 +135,6 @@ nav ul li a {
 footer {
     background: #222;
     padding: 10px;
-    text-align: center;
     color: #fff;
     position: fixed;
     width: 100%;
