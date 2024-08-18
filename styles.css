@@ -5,7 +5,12 @@ body {
     padding: 0;
     color: #fff;
     background-color: #111;
-    text-align: center; /* Center align all text by default */
+    text-align: center;
+    overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+html, body {
+    height: 100%; /* Ensure the body takes full height */
 }
 
 header {
@@ -58,7 +63,7 @@ nav ul li a {
 
 .info-container {
     display: flex;
-    justify-content: center; /* Center align the info-container */
+    justify-content: center;
     align-items: flex-start;
     flex-wrap: wrap;
 }
@@ -70,7 +75,7 @@ nav ul li a {
     flex: 1;
     min-width: 280px;
     margin: 10px;
-    text-align: center; /* Center align text in boxes */
+    text-align: center;
 }
 
 .about-me h2, .connections h2 {
@@ -80,7 +85,7 @@ nav ul li a {
 .connection-item {
     display: flex;
     align-items: center;
-    justify-content: center; /* Center align connection items */
+    justify-content: center;
     margin-bottom: 10px;
 }
 
@@ -102,7 +107,7 @@ nav ul li a {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 20px;
-    justify-items: center; /* Center grid items */
+    justify-items: center;
 }
 
 .project-card, .skill-card {
@@ -136,7 +141,6 @@ footer {
     background: #222;
     padding: 10px;
     color: #fff;
-    position: fixed;
+    position: relative; /* Ensure the footer does not fix to the bottom */
     width: 100%;
-    bottom: 0;
 }
