@@ -43,7 +43,12 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #f5f5f5;
+    color: transparent;
+    background: linear-gradient(270deg, #3C8CE7, #00EAFF);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-fade 6s ease infinite; /* Fading gradient animation */
     text-decoration: none;
     font-weight: 600;
     font-size: 1.1em;
@@ -51,7 +56,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #ED4182;
+    color: #00EAFF; /* Solid color on hover */
 }
 
 #hero {
@@ -130,7 +135,11 @@ nav ul li a:hover {
 
 .connection-item p {
     font-size: 1.2em;
-    color: #f5f5f5; /* Solid white for connection text */
+    background: linear-gradient(270deg, #3C8CE7, #00EAFF); /* New gradient for "ttroublett" */
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-fade 6s ease infinite; /* Fading gradient animation */
 }
 
 #projects, #skills {
@@ -217,13 +226,18 @@ footer {
 }
 
 a {
-    color: #ED4182; /* Match the end of the gradient */
+    color: transparent;
+    background: linear-gradient(270deg, #3C8CE7, #00EAFF); /* New gradient for links */
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient-fade 6s ease infinite; /* Fading gradient animation */
     text-decoration: none;
     transition: color 0.3s ease;
 }
 
 a:hover {
-    color: #fff;
+    color: #00EAFF; /* Solid color on hover */
 }
 
 /* Gradient Animation */
