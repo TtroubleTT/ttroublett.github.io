@@ -157,3 +157,7 @@ footer {
     position: relative; /* Ensure the footer does not fix to the bottom */
     width: 100%;
 }
+
+a {
+    color: #fff;
+}
