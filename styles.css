@@ -3,8 +3,8 @@ body {
     font-family: 'Raleway', sans-serif;
     margin: 0;
     padding: 0;
-    color: #fff;
-    background-color: #111;
+    color: #f5f5f5;
+    background-color: #1c1c1c;
     text-align: center;
     overflow-x: hidden; /* Prevent horizontal scroll */
 }
@@ -14,14 +14,16 @@ html, body {
 }
 
 header {
-    background: #222;
+    background: #2a2a2a;
     padding: 20px;
-    color: #fff;
+    color: #f5f5f5;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
 }
 
 header h1 {
     margin: 0;
-    font-size: 2em;
+    font-size: 2.5em;
+    letter-spacing: 2px;
 }
 
 nav ul {
@@ -32,33 +34,43 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 15px;
+    margin: 0 20px;
 }
 
 nav ul li a {
-    color: #fff;
+    color: #f5f5f5;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #00b4d8;
 }
 
 #hero {
     background: url('https://media.discordapp.net/attachments/1064690134991261768/1274517015620616295/IMG_7596.PNG?ex=66c332b7&is=66c1e137&hm=c1dec29a71a51abfa2bba441216763b36924866dcfc0df6c36886916df039623&=&format=webp&quality=lossless&width=1056&height=594') no-repeat center center;
     background-size: cover;
-    height: 300px;
+    height: 350px;
+    filter: brightness(70%);
 }
 
 #welcome-header {
-    padding: 40px 20px;
+    padding: 50px 20px;
 }
 
 #welcome-header h2 {
-    font-size: 2em;
+    font-size: 2.5em;
     margin: 0;
+    color: #00b4d8;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
 }
 
 #info-box {
     background: #333;
-    padding: 20px;
+    padding: 40px 20px;
 }
 
 .info-container {
@@ -70,62 +82,89 @@ nav ul li a {
 
 .about-me, .connections {
     background: #444;
-    padding: 20px;
+    padding: 30px;
     border-radius: 8px;
     flex: 1;
-    text-align: center;
+    text-align: left;
     box-sizing: border-box;
+    color: #f5f5f5;
 }
 
 .about-me h2, .connections h2 {
     margin-top: 0;
+    color: #00b4d8;
+    font-size: 1.8em;
+    border-bottom: 2px solid #00b4d8;
+    padding-bottom: 10px;
 }
 
 .connection-item {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-bottom: 10px;
+    justify-content: flex-start;
+    margin-bottom: 15px;
 }
 
 .connection-item img {
-    width: 24px;
-    height: 24px;
-    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
 }
 
 #projects, #skills {
-    padding: 40px 20px;
+    padding: 60px 20px;
+    background: #1c1c1c;
 }
 
 #projects h2, #skills h2 {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    color: #00b4d8;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
 }
 
 .project-grid, .skills-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 30px;
     justify-items: center;
 }
 
 .project-card, .skill-card {
-    background: #222;
-    padding: 20px;
+    background: #2a2a2a;
+    padding: 25px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
     text-align: center;
     width: 100%;
-    max-width: 360px;
+    max-width: 380px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card h3, .skill-card h3 {
+    margin-top: 0;
+    font-size: 1.5em;
+    color: #00b4d8;
+}
+
+.project-card p, .skill-card p {
+    color: #f5f5f5;
+    font-size: 1.1em;
+}
+
+.project-card:hover, .skill-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.7);
 }
 
 .video-container {
     width: 100%;
-    height: 200px;
+    height: 230px;
     padding: 10px 0;
 }
 
@@ -135,20 +174,24 @@ nav ul li a {
     border: none;
 }
 
-.skill-card:hover {
-    transform: translateY(-10px) scale(1.05);
-    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.7);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
 footer {
-    background: #222;
-    padding: 10px;
-    color: #fff;
+    background: #2a2a2a;
+    padding: 20px;
+    color: #f5f5f5;
     position: relative;
     width: 100%;
+    text-align: center;
+    font-size: 1em;
+    letter-spacing: 1px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5);
 }
 
 a {
+    color: #00b4d8;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
     color: #fff;
 }
