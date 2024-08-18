@@ -42,7 +42,7 @@ nav ul li a {
 }
 
 #hero {
-    background: url('https://media.discordapp.net/attachments/1064690134991261768/1274517015620616295/IMG_7596.PNG?ex=66c289f7&is=66c13877&hm=e67cd860fc25486f4d273ddcc7528b0518acf91ac20774c68d7200474fe6922d&=&format=webp&quality=lossless&width=1056&height=594') no-repeat center center;
+    background: url('IMG_7596.PNG') no-repeat center center;
     background-size: cover;
     height: 300px;
 }
@@ -76,6 +76,7 @@ nav ul li a {
     min-width: 280px;
     margin: 10px;
     text-align: center;
+    height: 100%; /* Ensures equal height */
 }
 
 .about-me h2, .connections h2 {
@@ -123,8 +124,8 @@ nav ul li a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Hover animation */
 }
-
 
 .project-card, .skill-card  {
     display: inline-block;
@@ -137,6 +138,11 @@ nav ul li a {
 
 .project-card h3, .skill-card h3 {
     margin-top: 0;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.7);
 }
 
 .video-container {
