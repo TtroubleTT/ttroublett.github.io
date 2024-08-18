@@ -65,18 +65,16 @@ nav ul li a {
     display: flex;
     justify-content: space-between;
     align-items: stretch;
-    flex-wrap: wrap;
+    gap: 20px; /* Adds space between the sections */
 }
 
 .about-me, .connections {
     background: #444;
     padding: 20px;
     border-radius: 8px;
-    flex-grow: 1;
-    min-width: 280px;
-    margin: 10px;
+    flex: 1;
     text-align: center;
-    box-sizing: border-box; /* Helps maintain padding inside the box */
+    box-sizing: border-box;
 }
 
 .about-me h2, .connections h2 {
@@ -106,7 +104,7 @@ nav ul li a {
 
 .project-grid, .skills-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     justify-items: center;
 }
@@ -118,7 +116,7 @@ nav ul li a {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     text-align: center;
     width: 100%;
-    max-width: 360px; /* Ensures uniform size */
+    max-width: 360px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -127,7 +125,7 @@ nav ul li a {
 
 .video-container {
     width: 100%;
-    height: 250px; /* Adjust height for better video display */
+    height: 200px;
     padding: 10px 0;
 }
 
