@@ -85,6 +85,8 @@ nav ul li a:hover {
 #info-box {
     background: #333;
     padding: 40px 20px;
+    margin: 0 100px;
+    border-radius: 5px;
 }
 
 .info-container {
