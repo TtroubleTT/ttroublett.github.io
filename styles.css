@@ -60,7 +60,7 @@ nav ul li a:hover {
 }
 
 #hero {
-    background: url('https://cdn.discordapp.com/attachments/1283234261209452717/1339394655632232539/Chaos_Theory_Banner.png?ex=67ae8ffa&is=67ad3e7a&hm=857e83feaa0fc9951f3cf5070de8732117ead5dff5a666875a6cd77c283ecfc4&') no-repeat center center;
+    background: url('images/ChaosTheoryBanner.png') no-repeat center center;
     background-size: cover;
     height: 350px;
     filter: brightness(70%);
